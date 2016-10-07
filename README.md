@@ -9,7 +9,7 @@ Improvements by [Chris Adams](http://www.cadams.com.au/), [Max Slabyak](https://
 
 **Version 1.6:**
 
-* Added a redirect type that is based ont he rules engine
+* Added a redirect type that is based on the rules engine
 * Fixed a small bug in the delete redirect command
 
 **Version 1.5:**
