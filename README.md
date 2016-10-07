@@ -7,6 +7,11 @@ Improvements by [Chris Adams](http://www.cadams.com.au/), [Max Slabyak](https://
 
 ## Changelog ##
 
+**Version 1.6:**
+
+* Added a rediret type that is based ont he rules engine
+* Fixed a small bug in the delete redirect command
+
 **Version 1.5:**
 
 * Added missing English language versions on template fields.
