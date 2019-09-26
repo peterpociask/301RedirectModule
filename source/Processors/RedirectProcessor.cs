@@ -110,9 +110,9 @@ namespace SharedSource.RedirectModule.Processors
                 // Query portion gets in the way of getting the sitecore item.
                 var pathAndQuery = redirectPath.Split('?');
                 var path = pathAndQuery[0];
-                if (LinkManager.Provider != null &&
-                    LinkManager.Provider.GetDefaultUrlOptions() != null &&
-                    LinkManager.Provider.GetDefaultUrlOptions().EncodeNames)
+
+                if (LinkManager.GetDefaultUrlOptions() != null &&
+                    LinkManager.GetDefaultUrlOptions().EncodeNames)
                 {
                     path = Sitecore.MainUtil.DecodeName(path);
                 }
@@ -232,10 +232,10 @@ namespace SharedSource.RedirectModule.Processors
 
         private static void SendResponse(string redirectToUrl, string queryString, ResponseStatus responseStatusCode, HttpRequestArgs args)
         {
-            args.Context.Response.Status = responseStatusCode.Status;
-            args.Context.Response.StatusCode = responseStatusCode.StatusCode;
-            args.Context.Response.AddHeader("Location", redirectToUrl + queryString);
-            args.Context.Response.End();
+            HttpContext.Current.Response.Status = responseStatusCode.Status;
+            HttpContext.Current.Response.StatusCode = responseStatusCode.StatusCode;
+            HttpContext.Current.Response.AddHeader("Location", redirectToUrl + queryString);
+            HttpContext.Current.Response.End();
         }
 
         private static string GetRedirectToItemUrl(Item redirectToItem)
