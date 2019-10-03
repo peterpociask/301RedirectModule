@@ -3,9 +3,14 @@
 
 Original version was created by Chris Castle, available at [http://trac.sitecore.net/301RedirectModule](http://trac.sitecore.net/301RedirectModule)
 
-Improvements by [Chris Adams](http://www.cadams.com.au/), [Max Slabyak](https://github.com/maxslabyak) and [Mark Wiseman](https://github.com/mawiseman), available at [https://github.com/thecadams/301RedirectModule] (https://github.com/thecadams/301RedirectModule)
+Improvements by [Chris Adams](http://www.cadams.com.au/), [Max Slabyak](https://github.com/maxslabyak), [Mark Wiseman](https://github.com/mawiseman), and [Peter Pociask](https://github.com/peterpociask/) available at [https://github.com/thecadams/301RedirectModule] (https://github.com/thecadams/301RedirectModule)
 
 ## Changelog ##
+
+**Version 1.7:**
+
+* Compiled against 9.2 dlls
+* Changed Target Framework Version to 4.7.1
 
 **Version 1.6:**
 
