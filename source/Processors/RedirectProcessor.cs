@@ -32,7 +32,7 @@ namespace SharedSource.RedirectModule.Processors
             {
                 // Grab the actual requested path for use in both the item and pattern match sections.
                 var requestedUrl = HttpContext.Current.Request.Url.ToString();
-                var requestedPath = HttpContext.Current.Request.Url.AbsolutePath;
+                var requestedPath = HttpContext.Current.Request.RawUrl;
                 var requestedPathAndQuery = HttpContext.Current.Request.Url.PathAndQuery;
                 var db = Sitecore.Context.Database;
 
